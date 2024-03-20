@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations.">
+    <meta name="keywords" content="4D-DRESS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> 4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations. </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <style>
+      /* Set the size of the carousel container */
+      .results-carousel {
+          width: 900px; /* Set the width of the carousel */
+          margin: auto; /* Center the carousel */
+      }
+    </style>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title"> 4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations </h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://wenbwa.github.io">Wenbo Wang</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/hohs">Hsuan-I Ho</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/cheguo">Chen Guo</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ribosome-rbx.github.io">Boxiang Rong</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/agrigorev">Artur Grigorev</a>,
+                        </span>
+                        <br>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/song">Jie Song</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/jzarate">Juan Jose Zarate</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a>
+                        </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">ETH Zurich</span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">CVPR 2024
+                        </span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                </a>
+                            </span>
+                            <!-- Video Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-youtube"></i>
+                                    </span>
+                                    <span>Video</span>
+                                </a>
+                            </span>
+                            <!-- Dataset Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fa fa-database"></i>
+                                    </span>
+                                    <span>Dataset</span>
+                                </a>
+                            </span>
+                            <!-- Code Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="system">
+    <div class="container is-max-desktop">
+        <img src="assets/images/4D-DRESS.png" height="250" class="center"/>
+        <p>
+            Overview. 4D-DRESS is the first real-world 4D dataset of human clothing, capturing 64 human outfits in more than 520 motion sequences. 
+            These sequences include a) high-quality 4D textured scans; for each scan, we annotate b) vertex-level semantic labels, thereby obtaining 
+            c) the corresponding garment meshes and fitted SMPL(-X) body meshes.
+        </p>
+    </div>
+</section>
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+              The studies of human clothing for digital avatars have predominantly relied on synthetic datasets. While easy to collect, synthetic data often fall short in realism and fail to capture authentic clothing dynamics. 
+              Addressing this gap, we introduce 4D-DRESS, the first real-world 4D dataset advancing human clothing research with its high-quality 4D textured scans and garment meshes. 
+              4D-DRESS captures 64 outfits in 520 human motion sequences amounting to a total of 78k textured scans. Creating a real-world clothing dataset is challenging, particularly in annotating and segmenting the extensive and complex 4D human scans. 
+              To address this, we develop a semi-automatic 4D human parsing pipeline. We efficiently combine a human-in-the-loop process with automation to accurately label 4D scans in diverse garments and body movements. 
+              Leveraging precise annotations and high-quality garment meshes, we establish a number of benchmarks for clothing simulation and reconstruction. 
+              4D-DRESS offers realistic and challenging data that complements synthetic sources, paving the way for advancements in research of lifelike human clothing.
+              <br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Paper Video</h2>
+        <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SoJhIr8xSzQ?si=rAN3KalSDOWnkzFe&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+<hr>
+<section class="section" id="4D Human Parsing Method">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">4D Human Parsing Method</h2>
+        <hr>
+        <img src="assets/images/4DHumanParsing.png" height="250" class="center"/>
+        <p>
+            4D Human Parsing Method. We first render current and previous frame scans into multi-view images and labels. 
+            Then collect multi-view parsing results from the image parser, optical flows, and segmentation masks. 
+            Finally, we project multi-view labels to 3D vertices and optimize vertex labels using the Graph Cut algorithm with vertex-wise unary energy and edge-wise binary energy. 
+            The manual rectification labels can be easily introduced by checking multi-view rendered labels.
+        </p>
+    </div>
+</section>
+
+
+<hr>
+<section class="section" id="4D-DRESS Dataset Content">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Contents</h2>
+        <hr>
+        <img src="assets/images/DataFormat.png" height="250" class="center"/>
+        <p>
+            <br>
+            4D-DRESS provides high-quality 4D textured scans with annotate vertex-level semantic labels, together with
+            the corresponding multi-view captured images and labels, the extracted garment meshes and fitted SMPL(-X) body meshes.
+        </p>
+        <hr>
+    </div>
+</section>
+
+<hr>
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Subjects</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <img src="assets/images/subject0.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject1.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject2.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject3.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject4.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject5.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject6.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject7.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject8.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject9.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject10.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject11.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject12.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject13.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject14.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject15.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject16.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject17.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject18.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject19.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject20.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject21.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject22.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject23.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject24.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject25.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject26.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject27.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject28.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject29.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject30.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject31.png" class="center"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://wenbwa.github.io/4D-DRESS-DEMO/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. <br>
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
