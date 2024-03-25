@@ -128,7 +128,7 @@
     <div class="container is-max-desktop">
         <img src="assets/images/4D-DRESS.png" height="250" class="center"/>
         <p>
-            Overview. 4D-DRESS is the first real-world 4D dataset of human clothing, capturing 64 human outfits in more than 520 motion sequences. 
+            <b>Dataset Overview</b>. 4D-DRESS is the first real-world 4D dataset of human clothing, capturing 64 human outfits in more than 520 motion sequences. 
             These sequences include a) high-quality 4D textured scans; for each scan, we annotate b) vertex-level semantic labels, thereby obtaining 
             c) the corresponding garment meshes and fitted SMPL(-X) body meshes.
         </p>
@@ -179,36 +179,28 @@
         <hr>
         <img src="assets/images/4DHumanParsing.png" height="250" class="center"/>
         <p>
-            4D Human Parsing Method. We first render current and previous frame scans into multi-view images and labels. 
-            Then collect multi-view parsing results from the image parser, optical flows, and segmentation masks. 
-            Finally, we project multi-view labels to 3D vertices and optimize vertex labels using the Graph Cut algorithm with vertex-wise unary energy and edge-wise binary energy. 
-            The manual rectification labels can be easily introduced by checking multi-view rendered labels.
-        </p>
-    </div>
-</section>
-
-
-<hr>
-<section class="section" id="4D-DRESS Dataset Content">
-    <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Contents</h2>
-        <hr>
-        <img src="assets/images/DataFormat.png" height="250" class="center"/>
-        <p>
-            <br>
-            4D-DRESS provides high-quality 4D textured scans with annotate vertex-level semantic labels, together with
-            the corresponding multi-view captured images and labels, the extracted garment meshes and fitted SMPL(-X) body meshes.
+          <b>4D Human Parsing Method</b>. We first render current and previous frame scans into multi-view images and labels. 
+            3.1) Then collect multi-view parsing results from the image parser, optical flows, and segmentation masks. 
+            3.2) Finally, we project multi-view labels to 3D vertices and optimize vertex labels using the Graph Cut algorithm with vertex-wise unary energy and edge-wise binary energy. 
+            3.3) The manual rectification labels can be easily introduced by checking the multi-view rendered labels.
         </p>
         <hr>
     </div>
 </section>
 
-<hr>
 
+<hr>
 <section class="hero">
     <div class="hero-body">
       <div class="container">
         <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Subjects</h2>
+        <hr>
+        <p>
+          <center>
+            4D-DRESS captures <b>32</b> subjects with <b>64</b> real-world human outfits in more than <b>520</b> motion sequences and <b>78k</b> scan frames.
+          </center>
+          <br>
+          </p>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-steve">
             <img src="assets/images/subject0.png" class="center"/>
@@ -239,6 +231,9 @@
           </div>
           <div class="item item-chair-tp">
             <img src="assets/images/subject9.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
+            <img src="assets/images/subject30.png" class="center"/>
           </div>
           <div class="item item-chair-tp">
             <img src="assets/images/subject10.png" class="center"/>
@@ -292,6 +287,9 @@
             <img src="assets/images/subject26.png" class="center"/>
           </div>
           <div class="item item-chair-tp">
+            <img src="assets/images/subject31.png" class="center"/>
+          </div>
+          <div class="item item-chair-tp">
             <img src="assets/images/subject27.png" class="center"/>
           </div>
           <div class="item item-chair-tp">
@@ -300,19 +298,36 @@
           <div class="item item-chair-tp">
             <img src="assets/images/subject29.png" class="center"/>
           </div>
-          <div class="item item-chair-tp">
-            <img src="assets/images/subject30.png" class="center"/>
-          </div>
-          <div class="item item-chair-tp">
-            <img src="assets/images/subject31.png" class="center"/>
-          </div>
         </div>
+        <hr>
       </div>
     </div>
   </section>
   </div>
 </section>
 
+<hr>
+<section class="section" id="4D-DRESS Dataset Contents">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Contents</h2>
+        <hr>
+        <video poster="" id="data_format" autoplay controls muted loop height="100%">
+          <source src="assets/videos/DataFormat.mp4" type="video/mp4">
+        </video>
+        <p>
+            4D-DRESS provides each sequence with a) high-quality 4D textured scans in b) vertex-level semantic annotations, plus
+            c) the corresponding multi-view captured images and rendered labels, as well as c) the extracted garments and fitted SMPL(-X) bodies.
+        </p>
+        <hr>
+    </div>
+</section>
+
+<hr>
+<section class="section" id="4D-DRESS Dataset Benchmarks">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">4D-DRESS Benchmarks</h2>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
