@@ -1,0 +1,11 @@
+[submodule "4dhumanparsing/lib/Graphonomy"]
+	path = 4dhumanparsing/lib/Graphonomy
+	url = https://github.com/Gaoyiminggithub/Graphonomy.git
+
+[submodule "4dhumanparsing/lib/RAFT"]
+	path = 4dhumanparsing/lib/RAFT
+	url = https://github.com/princeton-vl/RAFT.git
+
+[submodule "4dhumanparsing/lib/pygco"]
+	path = 4dhumanparsing/lib/pygco
+	url = https://github.com/yujiali/pygco.git

@@ -1,0 +1,9 @@
+trimesh
+aitviewer
+matplotlib
+pycocotools
+scikit-image
+opencv-python
+torch-scatter
+numpy==1.22.4
+scikit-learn
