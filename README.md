@@ -165,4 +165,12 @@ python 4dhumanparsing/multi_surface_parsing.py --dataset XHumans --subj 00017  -
 
 ## Citation
 ```
+@misc{wang20244ddress,
+      title={4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations}, 
+      author={Wenbo Wang and Hsuan-I Ho and Chen Guo and Boxiang Rong and Artur Grigorev and Jie Song and Juan Jose Zarate and Otmar Hilliges},
+      year={2024},
+      eprint={2404.18630},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
