@@ -4,7 +4,7 @@
 
 ### <p align="center"> [CVPR 2024 (Highlight 11.9%)](https://cvpr2023.thecvf.com) </p>
 
-## <p align="center"> [ArXiv](https://eth-ait.github.io/4d-dress/) / [Dataset](https://eth-ait.github.io/4d-dress/) / [Website](https://eth-ait.github.io/4d-dress/) </p>
+## <p align="center"> [ArXiv](https://arxiv.org/abs/2404.18630) / [Video](https://www.youtube.com/watch?v=dEQ4dvO8BsE) / [Dataset](https://4d-dress.ait.ethz.ch) / [Website](https://eth-ait.github.io/4d-dress/) </p>
 
 <p align="center">
   <img width="100%" src="assets/4D-DRESS.png"/>
