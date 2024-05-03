@@ -81,19 +81,11 @@
                         <div class="publication-links">
                             <!-- PDF Link. -->
                             <span class="link-block">
-                                <a href="https://files.ait.ethz.ch/projects/4d-dress/4d-dress.pdf" class="external-link button is-normal is-rounded is-dark">
+                                <a href="https://arxiv.org/abs/2404.18630" class="external-link button is-normal is-rounded is-dark">
                                     <span class="icon">
                                         <i class="fas fa-file-pdf"></i>
                                     </span>
                                     <span>Paper</span>
-                                </a>
-                            </span>
-                            <span class="link-block">
-                                <a href="https://files.ait.ethz.ch/projects/4d-dress/4d-dress-supp.pdf" class="external-link button is-normal is-rounded is-dark">
-                                    <span class="icon">
-                                        <i class="fas fa-file-pdf"></i>
-                                    </span>
-                                    <span>SuppMat</span>
                                 </a>
                             </span>
                             <!-- Video Link. -->
@@ -321,24 +313,36 @@
         <h2 class="title is-3 has-text-centered">4D-DRESS Dataset Contents</h2>
         <hr>
         <video poster="" id="data_format" autoplay controls muted loop height="100%">
-          <source src="assets/videos/DataFormat.mp4" type="video/mp4">
+          <source src="https://github.com/eth-ait/4d-dress/tree/project_page/assets/videos/DataFormat.mp4" type="video/mp4">
         </video>
         <p>
             4D-DRESS provides each sequence with a) high-quality 4D textured scans in b) vertex-level semantic annotations, plus
-            c) the corresponding multi-view captured images and rendered labels, as well as c) the extracted garments and fitted SMPL(-X) bodies.
+            c) the corresponding multi-view captured images and rendered labels, as well as d) the extracted garments and fitted SMPL(-X) bodies.
         </p>
         <hr>
     </div>
 </section>
 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{wang20244ddress,
+title={4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations},
+author={Wang, Wenbo and Ho, Hsuan-I and Guo, Chen and Rong, Boxiang and Grigorev, Artur and Song, Jie and Zarate, Juan Jose and Hilliges, Otmar},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+year={2024}
+    }</code></pre>
+  </div>
+</section>
+    
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://wenbwa.github.io/4D-DRESS-DEMO/">
+         href="https://arxiv.org/abs/2404.18630">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://wenbwa.github.io/4D-DRESS-DEMO/" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/eth-ait/4d-dress" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
