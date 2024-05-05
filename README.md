@@ -2,7 +2,7 @@
 
 ###  <p align="center"> [Wenbo Wang*](https://wenbwa.github.io), [Hsuan-I Ho*](https://ait.ethz.ch/people/hohs), [Chen Guo](https://ait.ethz.ch/people/cheguo), [Boxiang Rong](https://ribosome-rbx.github.io), [Artur Grigorev](https://ait.ethz.ch/people/agrigorev), [Jie Song](https://ait.ethz.ch/people/song), [Juan Jose Zarate](https://ait.ethz.ch/people/jzarate), [Otmar Hilliges](https://ait.ethz.ch/people/hilliges) </p>
 
-### <p align="center"> [CVPR 2024 (Highlight 11.9%)](https://cvpr2023.thecvf.com) </p>
+### <p align="center"> [CVPR 2024 Highlight](https://cvpr2023.thecvf.com) </p>
 
 ## <p align="center"> [ArXiv](https://arxiv.org/abs/2404.18630) / [Video](https://www.youtube.com/watch?v=dEQ4dvO8BsE) / [Dataset](https://4d-dress.ait.ethz.ch) / [Website](https://eth-ait.github.io/4d-dress/) </p>
 
@@ -29,7 +29,7 @@ Create conda environment from environment.yaml:
 conda env create -f environment.yml
 conda activate 4ddress
 ```
-Or create conda environment via following commands:
+Or create a conda environment via the following commands:
 ```
 conda create -n 4ddress python==3.8
 conda activate 4ddress
@@ -37,7 +37,7 @@ bash env_install.sh
 ```
 
 ## Model Installation
-Install image based parser: [Graphonomy](https://github.com/Gaoyiminggithub/Graphonomy.git).
+Install image-based parser: [Graphonomy](https://github.com/Gaoyiminggithub/Graphonomy.git).
 
 Download checkpoint inference.pth from [here](https://drive.google.com/file/d/1eUe18HoH05p0yFUd_sN6GXdTj82aW0m9/view?usp=sharing) and save to 4dhumanparsing/checkpoints/graphonomy/.
 ```
@@ -107,15 +107,15 @@ Please download the 4D-DRESS dataset and place the folders according to the foll
                 └── └── └── └── overlap-f*****.png: overlapped label (1280, 940, 3)
 
 
-## Postprocess Dataset
-Visualize 4D-DRESS sequence within [aitviewer](https://github.com/eth-ait/aitviewer):
+# Useful tools for 4D-DRESS:
+Visualize 4D-DRESS sequences using [aitviewer](https://github.com/eth-ait/aitviewer).
 ```
 python dataset/visualize.py --subj 00122  --outfit Outer --seq Take9
 ```
 
-Extract labeled cloth meshes and render multi-view pixel labels using vertex annotations:
+Extract labeled cloth meshes and render multi-view pixel labels using vertex annotations.
 ```
-python dataset/postprocess.py --subj 00122  --outfit Outer --seq Take9
+python dataset/extract_garment.py --subj 00122  --outfit Outer --seq Take9
 ```
 
 <hr>
@@ -127,7 +127,7 @@ python dataset/postprocess.py --subj 00122  --outfit Outer --seq Take9
 <hr>
 
 ## 4D Human Parsing on 4D-DRESS
-First, run image parser, optical flow, and segment anything models on the entire 4D scan sequence, parse the first frame:
+First, run the image parser, optical flow, and Segment Anything models on the entire 4D scan sequence, and parse the first frame:
 ```
 python 4dhumanparsing/multi_view_parsing.py --subj 00122  --outfit Outer --seq Take9
 ```
@@ -137,9 +137,9 @@ python 4dhumanparsing/multi_surface_parsing.py --subj 00122  --outfit Outer --se
 ``` 
 
 ## 4D Human Parsing with New Labels
-You can introduce new labels, like sock and belt, during the 4D human parsing process.
+You can introduce new labels, like socks and belts, during the 4D human parsing process.
 
-First, run image parser, optical flow, and segment anything models, parse the first frame with new_label=sock:
+First, run the image parser, optical flow, and Segment Anything models, parse the first frame with new_label=sock:
 ```
 python 4dhumanparsing/multi_view_parsing.py --subj 00135  --outfit Inner --seq Take1 --new_label sock
 ```
@@ -147,7 +147,7 @@ Second, run graph-cut optimization and introduce manual rectification on all fra
 ```
 python 4dhumanparsing/multi_surface_parsing.py --subj 00135  --outfit Inner --seq Take1 --new_label sock
 ```
-While, tracking and parsing small regions like sock and belt may need more manual rectification efforts.
+Tracking and parsing small regions like socks and belts may need more manual rectification efforts.
 
 ## 4D Human Parsing on Other Datasets
 You can apply our 4D human parsing method on other 4D human datasets, like BUFF, X-Humans, and Actors-HQ.
@@ -165,12 +165,10 @@ python 4dhumanparsing/multi_surface_parsing.py --dataset XHumans --subj 00017  -
 
 ## Citation
 ```
-@misc{wang20244ddress,
-      title={4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations}, 
-      author={Wenbo Wang and Hsuan-I Ho and Chen Guo and Boxiang Rong and Artur Grigorev and Jie Song and Juan Jose Zarate and Otmar Hilliges},
-      year={2024},
-      eprint={2404.18630},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{wang20244ddress,
+title={4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations},
+author={Wang, Wenbo and Ho, Hsuan-I and Guo, Chen and Rong, Boxiang and Grigorev, Artur and Song, Jie and Zarate, Juan Jose and Hilliges, Otmar},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+year={2024}
 }
 ```
