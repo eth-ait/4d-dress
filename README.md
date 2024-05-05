@@ -107,7 +107,7 @@ Please download the 4D-DRESS dataset and place the folders according to the foll
                 └── └── └── └── overlap-f*****.png: overlapped label (1280, 940, 3)
 
 
-# Useful tools for 4D-DRESS:
+## Useful tools for 4D-DRESS:
 Visualize 4D-DRESS sequences using [aitviewer](https://github.com/eth-ait/aitviewer).
 ```
 python dataset/visualize.py --subj 00122  --outfit Outer --seq Take9
