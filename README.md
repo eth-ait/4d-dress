@@ -167,8 +167,9 @@ python 4dhumanparsing/multi_surface_parsing.py --dataset XHumans --subj 00017  -
 
 ## Related Work
 
-Yin et. al, "[Hi4D: 4D Instance Segmentation of Close Human Interaction](https://yifeiyin04.github.io/Hi4D/)", CVPR 2023 
-Antić1 et. al, "[CloSe: A 3D Clothing Segmentation Dataset and Model](https://virtualhumans.mpi-inf.mpg.de/close3dv24/)", 3DV 2024
+* Yin et. al, "[Hi4D: 4D Instance Segmentation of Close Human Interaction](https://yifeiyin04.github.io/Hi4D/)", CVPR 2023
+* Shen et. al, "[X-Avatar: Expressive Human Avatars](https://skype-line.github.io/projects/X-Avatar/)", CVPR 2023
+* Antić et. al, "[CloSe: A 3D Clothing Segmentation Dataset and Model](https://virtualhumans.mpi-inf.mpg.de/close3dv24/)", 3DV 2024
 
 If you find our code, dataset, and paper useful, please cite as
 ```
