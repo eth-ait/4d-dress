@@ -73,24 +73,20 @@ Please download the 4D-DRESS dataset and place the folders according to the foll
                 └── └── └── └── overlap-f*****.png: overlapped label (1280, 940, 3)
 
 
-# Code instruction:
-Visualize 4D-DRESS sequences within aitviewer: https://github.com/eth-ait/aitviewer.
+# Useful tools for 4D-DRESS:
+Visualize 4D-DRESS sequences using [aitviewer](https://github.com/eth-ait/aitviewer).
 ```
 python visualize.py --subj 00122  --outfit Outer --seq Take9
 ```
 
 Extract labeled cloth meshes and render multi-view pixel labels using vertex annotations.
 ```
-python preprocess.py --subj 00122  --outfit Outer --seq Take9
+python extract_garment.py --subj 00122  --outfit Outer --seq Take9
 ```
-
-4D-DRESS sequences used in our benchmark experiments, as described below.
-```
-benchmarks.py
-```
-
 
 # Benchmark sequences:
+The sequences used for benchmark evaluations can be found in `benchmarks.py`.
+
 - Template-based clothing simulation is conducted on 16 garments and 96 sequences.
 
 | Outfit | Cloth | Subj/ID |                       Sequences                       |
