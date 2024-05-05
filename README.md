@@ -150,7 +150,7 @@ python 4dhumanparsing/multi_surface_parsing.py --subj 00135  --outfit Inner --se
 Tracking and parsing small regions like socks and belts may need more manual rectification efforts.
 
 ## 4D Human Parsing on Other Datasets
-You can apply our 4D human parsing method on other 4D human datasets, like BUFF, X-Humans, and Actors-HQ.
+You can apply our 4D human parsing method on other 4D human datasets, like [BUFF](https://buff.is.tue.mpg.de/), [X-Humans](https://github.com/Skype-line/X-Avatar), and [Actors-HQ](https://www.actors-hq.com/).
 
 For instance, you can modify our DatasetUtils within 4dhumanparsing/lib/utility/dataset.py to XHumansUtils.
 
@@ -163,7 +163,14 @@ After which, run graph-cut optimization and introduce manual rectification on al
 python 4dhumanparsing/multi_surface_parsing.py --dataset XHumans --subj 00017  --outfit test --seq Take10
 ```
 
-## Citation
+
+
+## Related Work
+
+Yin et. al, "[Hi4D: 4D Instance Segmentation of Close Human Interaction](https://yifeiyin04.github.io/Hi4D/)", CVPR 2023 
+Antić1 et. al, "[CloSe: A 3D Clothing Segmentation Dataset and Model](https://virtualhumans.mpi-inf.mpg.de/close3dv24/)", 3DV 2024
+
+If you find our code, dataset, and paper useful, please cite as
 ```
 @inproceedings{wang20244ddress,
 title={4D-DRESS: A 4D Dataset of Real-world Human Clothing with Semantic Annotations},
