@@ -106,6 +106,7 @@ Please download the 4D-DRESS dataset and place the folders according to the foll
                 │   │   │   └── label-f*****.png: rendered label (1280, 940, 3) 
                 └── └── └── └── overlap-f*****.png: overlapped label (1280, 940, 3)
 
+- Note, the camera parameters in cameras.pkl are based on the Pytorch3D coordinate system. See the discussions in this [issue](https://github.com/eth-ait/4d-dress/issues/3#issuecomment-3586436292) for the coordinate system conversion (to OpenGL).
 
 ## Useful tools for 4D-DRESS:
 Visualize 4D-DRESS sequences using [aitviewer](https://github.com/eth-ait/aitviewer).
